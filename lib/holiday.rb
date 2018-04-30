@@ -83,6 +83,7 @@ def all_holidays_with_bbq(holiday_hash)
   newarray =[]
   holiday_hash.each do |season, holiday_hash|
     holiday_hash.each do |holidayname, supply|
+      binding.pry
       if supply == "BBQ"
         newarray << holidayname
       end
@@ -90,3 +91,5 @@ def all_holidays_with_bbq(holiday_hash)
   end
   newarray
 end
+
+all_holidays_with_bbq(holiday_hash)
