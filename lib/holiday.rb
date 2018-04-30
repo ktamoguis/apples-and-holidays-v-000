@@ -101,14 +101,14 @@ def all_holidays_with_bbq(holiday_hash)
   newarray =[]
   holiday_hash.each do |season, holiday_hash|
     holiday_hash.each do |holidayname, supply|
-      binding.pry
+      #binding.pry
       if supply.include?("BBQ")
         newarray << holidayname
       end
     end
   end
   newarray
-  binding.pry
+  #binding.pry
 end
 
 all_holidays_with_bbq(holiday_hash)
