@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       newattributes = newarray.join(" ")
       dataarray = data.join(", ")
-      puts "#{newattributes}: #{dataarray}"
+      puts "  #{newattributes}: #{dataarray}"
     end
 end
 end
